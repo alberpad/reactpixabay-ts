@@ -26,7 +26,7 @@ class App extends React.Component<{}, IAppState> {
 
   consultarApiPixabay = async () => {
     const { termino, pagina, porPagina } = this.state;
-    const url = `https://pixabay.com/api/?key=12316380-27d6b2945b02fb36c2f885026&q=${termino}&per_page=${porPagina}&page=${pagina}`;
+    const url = `https://pixabay.com/api/?key={API_KEY}&q=${termino}&per_page=${porPagina}&page=${pagina}`;
     this.setState({
       cargando: true
     });
